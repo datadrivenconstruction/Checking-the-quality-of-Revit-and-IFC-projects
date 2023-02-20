@@ -1,0 +1,4 @@
+fpdf==1.7.2
+matplotlib==3.5.1
+missingno==0.4.2
+pandas==1.5.1
