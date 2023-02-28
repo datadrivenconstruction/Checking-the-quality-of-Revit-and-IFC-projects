@@ -4,6 +4,13 @@
 
 > In the construction industry, having accurate and high-quality building information models (BIM) is essential to the successful completion of a project. 
 
+
+## Executable application with interface
+## https://opendatabim.io/index.php/quality-of-revit-and-ifc-projects/
+
+![](https://opendatabim.io/wp-content/uploads/2023/02/UicheckUP.png)
+
+
 ## Solution logic
 With the help of a table describing the parameters in the category to be checked and with the help of Pipelines from OpenDataBIM – we check the projects in Revit and IFC formats. We automatically generate a PDF document, which contains the basic information about the parameters and categories to be checked.
 
