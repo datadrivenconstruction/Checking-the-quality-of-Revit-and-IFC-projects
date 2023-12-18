@@ -9,7 +9,7 @@ import multiprocessing
 from queue import Empty
 from PIL import Image, ImageTk
 import webbrowser
-from opendatabim.report import Report
+from DataDrivenConstruction.report import Report
 from datetime import datetime, timedelta
 import tkinter.font as tkFont
 
@@ -51,7 +51,7 @@ class ReportAPP(Tk):
         self.call("set_theme", "light")
 
 
-        self.title('OpenDataBIM')
+        self.title('DataDrivenConstruction')
 
         self.setupGUI()
         self.setStyles()
@@ -108,7 +108,7 @@ class ReportAPP(Tk):
                     sticky="W"
                 )
         Link.bind("<Button-1>",
-                lambda _: webbrowser.open_new("https://opendatabim.io/index.php/quality-of-revit-and-ifc-projects/")
+                lambda _: webbrowser.open_new("https://DataDrivenConstruction.io/index.php/quality-of-revit-and-ifc-projects/")
                   )
         odbLogo = os.path.join(self.base_path, 'img', 'odb.png')
         odbLogo = Image.open(odbLogo)
@@ -123,7 +123,7 @@ class ReportAPP(Tk):
                     column=1,
                     sticky="W")
 
-        headerLogo.bind("<Button-1>", lambda _: webbrowser.open_new("https://opendatabim.io/"))
+        headerLogo.bind("<Button-1>", lambda _: webbrowser.open_new("https://DataDrivenConstruction.io/"))
 
 
         Label(frameL, text="📁 Path to folder with Revit or IFC files", style="Option.TLabel").grid(
@@ -230,7 +230,7 @@ class ReportAPP(Tk):
                     pady=(10, 0),
         )
 
-        placeImgConverter.bind("<Button-1>", lambda _: webbrowser.open_new("https://opendatabim.io/"))
+        placeImgConverter.bind("<Button-1>", lambda _: webbrowser.open_new("https://DataDrivenConstruction.io/"))
 
         Label(frameR, text="📑 Excel spreadsheet with checking parameters", style="Option.TLabel").grid(
                     row=1,
@@ -363,7 +363,7 @@ class ReportAPP(Tk):
                     sticky="W"
         )
 
-        placeImgODB.bind("<Button-1>", lambda _: webbrowser.open_new("https://opendatabim.io/"))
+        placeImgODB.bind("<Button-1>", lambda _: webbrowser.open_new("https://DataDrivenConstruction.io/"))
 
         infoText = Label(infoPlace, text="Open application code\nand parameterizable output", style="Info.TLabel", cursor = "hand2")
         infoText.grid(
@@ -372,7 +372,7 @@ class ReportAPP(Tk):
                     sticky="W",
                     padx=(10, 0)
                 )
-        infoText.bind("<Button-1>", lambda _: webbrowser.open_new("https://github.com/OpenDataBIM/Checking-the-quality-of-Revit-and-IFC-projects"))
+        infoText.bind("<Button-1>", lambda _: webbrowser.open_new("https://github.com/DataDrivenConstruction/Checking-the-quality-of-Revit-and-IFC-projects"))
 
         buttonStart = Button(frameR, text="Start", width=15, command=lambda: self.startWork("button"), style="Button.TButton")
         buttonStart.grid(
@@ -397,7 +397,7 @@ class ReportAPP(Tk):
 
         helpFrame = Frame(frameR)
         helpFrame.grid(row=15, column=0, padx=10, sticky="W")
-        email = Label(helpFrame, text = "📧 Please send an email to info@opendatabim.io if you come across\nany issues or errors", cursor="hand2", style="About.TLabel")
+        email = Label(helpFrame, text = "📧 Please send an email to info@DataDrivenConstruction.io if you come across\nany issues or errors", cursor="hand2", style="About.TLabel")
         email.grid(
                     row=0,
                     column=0,
@@ -407,7 +407,7 @@ class ReportAPP(Tk):
                 )
 
         email.bind("<Button-1>",
-                lambda _: webbrowser.open_new("mailto:info@opendatabim.io")
+                lambda _: webbrowser.open_new("mailto:info@DataDrivenConstruction.io")
                   )
 
         self.pathToFolder = pathToFolder

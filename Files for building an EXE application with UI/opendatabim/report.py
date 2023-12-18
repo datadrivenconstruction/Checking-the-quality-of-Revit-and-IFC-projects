@@ -96,7 +96,7 @@ class Report:
                     self.set_y(-20)
                     self.set_font('Arial', '', 8)
                     self.image(os.path.join(pathPdfSources, 'footer_odb.png'), x=24, y=None, w=170, h=0, type='',
-                               link='https://opendatabim.io/')
+                               link='https://DataDrivenConstruction.io/')
                     self.set_text_color(56, 81, 153)
                     self.cell(170, 4, d2 + '  ' + 'Page  ' + str(self.page_no()) + '/{nb}', 0, 0, 'R')
 
