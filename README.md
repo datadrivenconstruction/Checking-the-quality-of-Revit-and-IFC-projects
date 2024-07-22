@@ -23,7 +23,7 @@ Before you dive into running the application, you need to prepare all the compon
 2. You need to get the data from the project as a CSV or XLSX Excel table. To export Revit or IFC format into tables, you can use any solution you work with:
 
 > 👨‍💻 **Manual extraction of tables:**
-Revit & Dynamo, Revit & Schedule, Revit & ODBC, pyRevit, Forge, SimpleBIM, Desite, IfcOpenShell, IFCjs and others
+Revit & Dynamo, Revit & Schedule, Revit & DDCC, pyRevit, Forge, SimpleBIM, Desite, IfcOpenShell, IFCjs and others
 > ⚙️ **Automatic and batch table retrieval: using noBIM Lite converters** (Revit 2018, Revit 2019, Revit 2020, Revit 2021, IFC2X3, IFC4X1, IFC4X, IFC4 – IFC4.3), noBIM Full converters (Revit 2015, Revit 2016, Revit 2017, Revit 2018, Revit 2019, Revit 2020, Revit 2021, Revit 2022, Revit 2023, IFC2X3, IFC4X1, IFC4X, IFC4 – IFC4.3)
 
 ![](https://DataDrivenConstruction.io/wp-content/uploads/2023/02/github.com-DataDrivenConstruction-5.gif)
@@ -54,23 +54,23 @@ Install required libraries: The libraries required by your code are specified in
 
     pip install -r requirements.txt
 
-In the code ODB_Pipeline_Batch_reporting_Revit_IFC_projects.py change the parameters – the path to the folders where your projects are located: pathfold, path, namemap, path_conv
+In the code DDC_Pipeline_Batch_reporting_Revit_IFC_projects.py change the parameters – the path to the folders where your projects are located: pathfold, path, namemap, path_conv
 
 
 
 
     ########################   Parameters    ########################
     # Folder where the converter are located
-    pathfold = r'C:\ODB_Check\ODBCheck\\'
+    pathfold = r'C:\DDC_Check\DDCCheck\\'
     
     # Folder where the conversion files are located
-    path = r'C:\ODB_Check\Sample\\'
+    path = r'C:\DDC_Check\Sample\\'
     
     # Path to the Excel file with test parameters
-    namemap = pathfold + '\ODB Table_of_Parameters_Revit _IFC_Check.xlsx'
+    namemap = pathfold + '\DDC Table_of_Parameters_Revit _IFC_Check.xlsx'
     
     # path to noBIM converter (for streaming file conversion)
-    path_conv = r'C:\ODB_Check\noBIM_Lite_v1_23-v2jfja\\'
+    path_conv = r'C:\DDC_Check\noBIM_Lite_v1_23-v2jfja\\'
     ################################################################
 
 
@@ -80,7 +80,7 @@ In the code ODB_Pipeline_Batch_reporting_Revit_IFC_projects.py change the parame
 Now that you have installed Python and the required libraries, you can run your Python code. Simply navigate to the folder where your code is located and run the following command:
 
 
-    python ODB_Pipeline_Batch_reporting_Revit_IFC_projects.py
+    python DDC_Pipeline_Batch_reporting_Revit_IFC_projects.py
     
 With these steps, you should be able to run Python code on a new computer without any issues.
 
